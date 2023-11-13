@@ -93,3 +93,7 @@ function count(text) {
   return count;
 }
 console.log(count(str));
+
+
+
+
