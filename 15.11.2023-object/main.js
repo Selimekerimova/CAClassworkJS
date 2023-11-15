@@ -49,9 +49,18 @@ var library = [
   },
 ];
 
-let check =library.forEach((item) => {
-  item.readingStatus === true
-    ? console.log(`Already read ${item.title} ${item.author}`)
-    : console.log(`You still need to read ${item.title} by ${item.author}`);
-});
-console.log(check)
+// library.forEach((item) => {
+//   item.readingStatus === true
+//     ? console.log(`Already read ${item.title} ${item.author}`)
+//     : console.log(`You still need to read ${item.title} by ${item.author}`);
+// });
+
+const employees = {
+  name: "Michael",
+  jobTilte: "RIM",
+  salary: 10000,
+  promote : function (a,b){
+console.log('salam');
+  },
+};
+console.log(employees.promote())
