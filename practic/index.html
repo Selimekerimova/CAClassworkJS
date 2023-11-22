@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <style>
+      .start {
+        background-color: green;
+        padding: 5px 10px;
+        color: white;
+        border: none;
+        font-size: 1.5rem;
+      }
+      .stop {
+        background-color: red;
+        padding: 5px 10px;
+        color: white;
+        border: none;
+        font-size: 1.5rem;
+      }
+      .reset {
+        background-color: red;
+        padding: 5px 15px;
+        color: black;
+        border: none;
+        font-size: 1.5rem;
+        margin: 20px 0;
+      }
+      .result {
+        font-size: 1.5rem;
+      }
+      .btn {
+        background-color: rgb(41, 135, 148);
+        border: none;
+        font-size: 1rem;
+        margin: 20px 0;
+        color: white;
+        padding: 5px 15px;
+      }
+      .inp{
+        border: 1px red solid;
+        padding: 5px 20px;
+        margin: 10px 0;
+      }
+      .btn-2{
+        color: black;
+        padding: 5px 20px;
+        background-color: rgb(243, 220, 178);
+        border: none;
+      }
+    </style>
+  </head>
+  <body>
+    <button class="start">Start</button>
+    <span class="result">0</span>
+    <button class="stop">Stop</button><br />
+
+    <button class="increment btn">Increment by 1</button>
+    <button class="decrement btn">Decrement by 1</button><br />
+
+    <button class="reset">Reset</button><br /><br /><br /><br />
+
+    <input type="number" name="" id="increment" class="inp" />
+    <button class="inc-btn btn-2">Increment By Input Value</button><br />
+    <input type="number" name="" id="decrement" class="inp" />
+    <button class="dec-btn btn-2">Decrement By Input Value</button>
+    <script src="./main.js"></script>
+  </body>
+</html>
