@@ -109,8 +109,9 @@
 // console.log(maxLength(array))
 
 
+
 ////////
-const products = [
+ const products = [
   { name: "one Product 1", price: 20, category: "Electronics" },
   { name: "two Product 2", price: 30, category: "Clothes" },
   { name: "three Product 3", price: 40, category: "Electronics" },
