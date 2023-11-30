@@ -13,6 +13,10 @@
       referrerpolicy="no-referrer"
     />
     <style>
+      table {
+        width: 900px;
+        border-collapse: collapse;
+      }
       table,
       tr,
       th,
@@ -21,23 +25,28 @@
       }
       th,
       td {
-        padding: 5px 10px;
+        padding: 10px 15px;
       }
       body {
         display: flex;
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        width: 100%;
+      }
+      #search {
+        width: 870px;
+        margin: 20px 0;
+        padding: 8px 15px;
       }
     </style>
   </head>
   <body>
+    <input type="text" name="" id="search" placeholder="Search..." />
     <table>
       <thead>
         <tr>
-          <th>Id<i class="fa-solid fa-arrow-up"></i></th>
-          <th>Name</th>
+          <th class="id">Id</th>
+          <th class="name">Name</th>
           <th>Email</th>
           <th>Gender</th>
         </tr>
