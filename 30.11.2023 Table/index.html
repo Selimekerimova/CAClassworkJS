@@ -38,6 +38,9 @@
         margin: 20px 0;
         padding: 8px 15px;
       }
+      .id :last-child{
+        display: none;
+      }
     </style>
   </head>
   <body>
@@ -45,8 +48,15 @@
     <table>
       <thead>
         <tr>
-          <th class="id">Id</th>
-          <th class="name">Name</th>
+          <th class="id">Id
+            <i class="fa-solid fa-arrow-down"></i>
+            <i class="fa-solid fa-arrow-up"></i>
+          </th>
+          <th class="name">
+            Name
+            <i class="fa-solid fa-arrow-down"></i>
+            <i class="fa-solid fa-arrow-up"></i>
+          </th>
           <th>Email</th>
           <th>Gender</th>
         </tr>

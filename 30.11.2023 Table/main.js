@@ -707,6 +707,7 @@ let arrowUp = document.querySelector(".fa-arrow-up");
 let searchInp = document.querySelector("#search");
 let nameThElem = document.querySelector("name");
 let idThElem = document.querySelector(".id");
+let iDown = document.querySelector(".fa-solid fa-arrow-down");
 
 
 searchInp.addEventListener("input", function (event) {
@@ -721,7 +722,6 @@ searchInp.addEventListener("input", function (event) {
   );
   drowTable(filtered);
 });
-
 
 function drowTable(data) {
   tbody.innerHTML = "";
@@ -738,16 +738,10 @@ function drowTable(data) {
 }
 drowTable(users);
 
-idThElem.addEventListener('click',function(){
- let sorted= users.sort((a,b)=>
-b.id-a.id
-  )
-drowTable(sorted)
-})
+idThElem.addEventListener("click", function () {
+  
+  let sorted = users.sort((a, b) => b.id - a.id);
+  drowTable(sorted);
+});
 
-nameThElem.addEventListener('click',function(){
- let sorted= users.sort((a,b)=>
-b.first_name.toLocaleLowerCase().localeCompare(a.first_name.toLocaleLowerCase())
-  )
-drowTable(sorted)
-})
+
