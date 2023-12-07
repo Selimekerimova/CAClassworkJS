@@ -1,5 +1,5 @@
 const BASE_URL = `https://northwind.vercel.app/api`;
-let row = document.querySelector(".row");
+let row = document.querySelector(".customers");
 fetch(`${BASE_URL}/customers`, {
   method: "GET",
 })

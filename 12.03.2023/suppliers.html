@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"
+    ></script>
+    <script defer src="./suppliers.js"></script>
+    <title>Suppliers</title>
+  </head>
+  <body>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        list-style: none;
+        text-decoration: none;
+      }
+      .container {
+        max-width: 1200px;
+      }
+      .header {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        padding: 20px 0;
+      }
+      h1 {
+        color: red;
+      }
+      ul {
+        display: flex;
+        gap: 30px;
+      }
+      a {
+        color: black;
+        font-size: 1.5rem;
+      }
+
+   
+      .card {
+        height: 200px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 40px;
+      }
+      .title {
+        color: darkslategrey;
+      }
+      .description {
+        color: rgb(104, 26, 26);
+      }
+      .btns {
+        display: flex;
+        gap: 10px;
+      }
+      .btn {
+        padding: 5px 10px;
+        border: none;
+        color: white;
+      }
+      .delete {
+        background-color: red;
+      }
+      .edit {
+        background-color: orange;
+      }
+
+    </style>
+    <header>
+      <div class="container">
+        <div class="header">
+          <h1>The Blog Website</h1>
+          <input
+            type="text"
+            name=""
+            id="search"
+            placeholder="search blog here..."
+          />
+          <ul>
+            <li><a href="./suppliers.html">Home</a></li>
+            <li><a href="./suppliers.-form.html">New Blog</a></li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <div class="container">
+      <div class="boxs">
+        <div class="cards">
+            <!-- <div class="card"> -->
+              <!-- <h2 class="title"></h2>
+                <h3 class="description"> </h3>
+                <h4></h4>
+                <div class="btns">
+                    <button class="delete"></button>
+                    <button class="edit"></button>
+                </div> -->
+            <!-- </div> -->
+          </div>
+      </div>
+    </div>
+  </body>
+</html>
