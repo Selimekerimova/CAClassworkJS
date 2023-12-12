@@ -156,3 +156,22 @@ companies.filter((item,i)=>item===item.toLocaleUpperCase()?item:null)
 )
 // 3. APPLE
 // 4.IBM
+
+
+
+
+let firstValue ='add'
+let secondValue='success'
+
+function test(str){
+ 
+  return str.split(' ').reduce(function(a, b) {
+    b.split('').reduce(function(c, d) {
+      return (c[d] = (c[d] || 0) + 1 , c);
+    }, a[b] = {});
+
+    return a;
+  }, {});
+
+}
+console.log(test(firstValue));;
