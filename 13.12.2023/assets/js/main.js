@@ -1,6 +1,5 @@
 let tbody = document.querySelector("tbody");
 const BASE_URL = ` http://localhost:8080`;
-
 async function getData() {
   const res = await axios(`${BASE_URL}/users`);
   drawTable(res.data);
@@ -19,8 +18,8 @@ function drawTable(arr) {
             <td>${element.surname}</td>
             <td>${element.email}</td>
             <td>${element.date}</td>
-            <td></td>
-            <a href="./form.html" class="btn btn-success" onclick=editByUser(${element.id},this)>edit</a>
+            <td>
+            <a class="btn btn-success" href="form.html?id=${element.id}">edit</a>
             <button class="btn btn-danger" onclick=deleteById(${element.id},this)>delete</button>
             <button class="btn btn-primary" onclick=addFavoriById(${element.id},this)>add fav</button>
             </td>

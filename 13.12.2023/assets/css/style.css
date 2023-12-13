@@ -13,12 +13,11 @@ header {
 }
 .header {
   padding: 15px 0;
-}
-.header nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .header nav ul {
   display: flex;
   align-items: center;
