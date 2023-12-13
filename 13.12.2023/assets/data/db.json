@@ -1,0 +1,36 @@
+{
+  "users": [
+    {
+      "name": "Collete",
+      "surname": "Tatou",
+      "email": "collete@gmail.com",
+      "date": "5/17/2023, 10:19:21 AM",
+      "userphoto": "./assets/img/Collete.jpg",
+      "id": 5
+    },
+    {
+      "name": "ego2",
+      "surname": "Anton",
+      "email": "ego2@gmail.com",
+      "date": "5/17/2023, 10:35:36 AM",
+      "userphoto": "./assets/img/Iqo.jpg",
+      "id": 6
+    },
+    {
+      "name": "Amery",
+      "surname": "Montana",
+      "email": "bykyb@mailinator.com",
+      "userphoto": "./assets/img/undefined",
+      "date": "12/13/2023, 9:56:11 PM",
+      "id": 12
+    },
+    {
+      "name": "Audra",
+      "surname": "Virginia",
+      "email": "padahososi@mailinator.com",
+      "userphoto": "./assets/img/undefined",
+      "date": "12/13/2023, 10:07:43 PM",
+      "id": 13
+    }
+  ]
+}
