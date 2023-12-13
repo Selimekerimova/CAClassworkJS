@@ -1,0 +1,20 @@
+{
+  "users": [
+    {
+      "name": "Collete",
+      "surname": "Tatou",
+      "email": "collete@gmail.com",
+      "date": "5/17/2023, 10:19:21 AM",
+      "userphoto": "./assets/img/Collete.jpg",
+      "id": 5
+    },
+    {
+      "name": "ego2",
+      "surname": "Anton",
+      "email": "ego2@gmail.com",
+      "date": "5/17/2023, 10:35:36 AM",
+      "userphoto": "./assets/img/Iqo.jpg",
+      "id": 6
+    }
+  ]
+}
