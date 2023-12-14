@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+body {
+  display: flex;
+  background-color: blue;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  background-color: #fff;
+  border-radius: 7px;
+  width: 420px;
+  padding: 28px 28px 45px;
+}
+.card header {
+  font-size: 28px;
+  text-align: center;
+  font-weight: 600;
+}
+.card .search {
+  margin: 35px 0 18px;
+  position: relative;
+}
+.card .search input {
+  padding: 15px 30px;
+  width: 100%;
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+
+.card .fa-search {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+}
+.card ul li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+  padding-bottom: 17px;
+  border-bottom: 1px solid #ccc;
+}
+
+ul .word p {
+  font-size: 22px;
+  font-weight: 600;
+}
+ul .word span {
+  font-size: 15px;
+  color: grey;
+}
+ul .word i {
+  font-size: 15px;
+  cursor: pointer;
+  color: grey;
+}
+ul li:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: 0;
+}
+
+.content li .details {
+  border-left: 3px #4d59fb solid;
+  padding-left: 10px;
+  border-radius: 4px 0 0 4px;
+}
+.content li .details p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.content li .details span {
+  font-size: 15px;
+  color: grey;
+}
