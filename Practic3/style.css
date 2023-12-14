@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+section {
+  background-color: black;
+  height: 100vh;
+}
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.card {
+  width: 400px;
+  background-color: white;
+  padding: 40px;
+  border-radius: 7px;
+}
+.card h1{
+    text-align: center;
+}
+.detal {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.search {
+  padding: 10px 5px;
+  border: 1px solid green;
+}
