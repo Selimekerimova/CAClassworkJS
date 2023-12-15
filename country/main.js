@@ -18,13 +18,15 @@ getAllData();
 function drawCard(arr) {
   arr.forEach((element) => {
     row.innerHTML += `
-        <div class="card col-12 col-6 col-3">
-          <img src="${element.flag}" alt="" />
-          <h4>${element.name}</h4>
-          <h4>Population: <span>${element.population}</span></h4>
-          <h4>Region: <span>${element.region}</span></h4>
-          <h4>Capital: <span>${element.capital}</span></h4>
-        </div>`;
+       <a href="./detail.html?name=${element.name}">
+       <div class="card col-12 col-6 col-3">
+       <img src="${element.flag}" alt="" />
+       <h4>${element.name}</h4>
+       <h4>Population: <span>${element.population}</span></h4>
+       <h4>Region: <span>${element.region}</span></h4>
+       <h4>Capital: <span>${element.capital}</span></h4>
+     </div>
+     </a>`;
   });
 }
 
@@ -40,18 +42,19 @@ searchBtn.addEventListener("input", async function (e) {
 
 select.addEventListener("change", async function (e) {
   row.innerHTML = "";
-  let res = await axios(`https://restcountries.com/v2/region/${e.target.value}`);
-
+  let res = await axios(
+    `https://restcountries.com/v2/region/${e.target.value}`
+  );
   let filtered = res.data.filter((item) =>
     item.region.toLocaleLowerCase().includes(e.target.value.toLocaleLowerCase())
   );
   drawCard(filtered);
 });
 
-modeBtn.addEventListener("click",function(){
-body.classList.toggle("darkk")
-localStorage.setItem('mode',body.classList)
-})
-if(localStorage.getItem('mode')!=''){
-    document.body.classList.add(localStorage.getItem('mode'))
+modeBtn.addEventListener("click", function () {
+  body.classList.toggle("darkk");
+  localStorage.setItem("mode", body.classList);
+});
+if (localStorage.getItem("mode") != "") {
+  document.body.classList.add(localStorage.getItem("mode"));
 }
