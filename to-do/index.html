@@ -5,14 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./main.js"></script>
   </head>
   <body>
-      <input type="text" name="" id="add" placeholder="add todo"/>
-    <ul class="list">
+    <div class="container">
+      <div class="todoDiv">
+        <form class="todoForm">
+          <input type="text" id="todoInput" />
+          <button type="submit" class="add">Add</button>
+        </form>
 
-    </ul>
-    <button class="add-todo">add </button>
+        <div class="todoList">
+          <ul>
+            <!-- <li>
+              <div class="checkDiv">
+                <input type="checkbox" />
+                <span>yatmaq</span>
+              </div>
+              <div class="btns">
+                <button class="delete">Delete</button>
+                <button class="edit">Edit</button>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </div>
 
-    <script src="./main.js"></script>
   </body>
 </html>

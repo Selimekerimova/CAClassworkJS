@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+}
+.container{
+    max-width: 1200px ;
+    margin: 0 auto;
+    padding: 0 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+}
+.todoDiv{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.todoDiv .todoForm{
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border: 1px solid; */
+}
+.todoDiv .todoForm input{
+    width: 80%;
+    padding: 10px 20px;
+    outline: none;
+    border: 1px solid transparent;
+    background-color: rgb(195, 195, 195);
+}
+.todoDiv .todoForm input:focus{
+    border: 1px solid blue;
+}
+.todoDiv .todoForm .add{
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    background-color: blue;
+    color: white;
+    transition: all 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
+.todoDiv .todoForm .add:hover{
+color: blue;
+background-color: transparent;
+border: 1px solid blue;
+}
+
+.todoList{
+    width: 500px;
+
+}
+.todoList ul{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.checkDiv{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.todoList ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100% ;
+    border: 1px solid transparent;
+    background-color: cornsilk;
+    padding: 10px 20px;
+}
+.todoList ul li .delete, .edit{
+    padding: 10px 20px;
+    border: 1px solid transparent;
+    color: #fff;
+    transition: all 0.5s;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.todoList ul li .delete{
+    background-color: red;
+
+}
+.todoList ul li .delete:hover{
+    color: red;
+    border: 1px solid red;
+    background-color: transparent;
+}
+.todoList ul li .edit{
+background-color: green;
+}
+.todoList ul li .edit:hover{
+    color: green;
+    border: 1px solid green;
+    background-color: transparent;
+}

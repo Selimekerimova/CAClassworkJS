@@ -1,17 +1,69 @@
-let inpt = document.querySelector("#add");
-let list = document.querySelector(".list");
-let addBtn = document.querySelector(".add-todo");
+let formElem = document.querySelector(".todoForm");
+let todoInput = document.querySelector("#todoInput");
+let ulElem = document.querySelector("ul");
+let addBtn = document.querySelector(".add");
 
-addBtn.addEventListener("click", function () {
-  let spanElem = document.createElement("span");
-  let liElem = document.createElement("li");
-  let btnElem = document.createElement("button");
-  spanElem.innerText = inpt.value;
-  btnElem.innerText = "Delete";
-  liElem.append(spanElem, btnElem);
-  list.append(liElem);
-  inpt.value = "";
-  btnElem.addEventListener("click", function () {
-    this.parentElement.remove();
-  });
+let todoArray = getLocaleStorageTodo();
+let editObj;
+formElem.addEventListener("submit", function (e) {
+  e.preventDefault();
+  if (addBtn.innerText == "Add")
+    if (todoInput.value) {
+      let todoObj = {
+        id: Date.now(),
+        value: todoInput.value,
+      };
+      todoArray.push(todoObj);
+      setLocaleStorageTodo(todoArray);
+      drawTodo(todoArray);
+      todoInput.value = "";
+    } else {
+      alert("fill input");
+    }
+  else {
+    editObj.value = todoInput.value;
+    addBtn.innerText = "Add";
+    drawTodo(todoArray);
+    setLocaleStorageTodo(todoArray);
+    todoInput.value = "";
+  }
 });
+
+function drawTodo(arr) {
+  ulElem.innerHTML = "";
+  arr.forEach((element) => {
+    ulElem.innerHTML += `
+    <li>
+      <div class="checkDiv">
+        <input type="checkbox"  />
+        <span>${element.value}</span>
+      </div>
+      <div class="btns">
+        <button class="delete" onclick=deleteTodo(${element.id})>Delete</button>
+        <button class="edit" onclick=editTodo(${element.id}) >Edit</button>
+      </div>
+    </li>
+  `;
+  });
+}
+drawTodo(todoArray);
+
+function deleteTodo(id) {
+  todoArray = todoArray.filter((item) => item.id != id);
+  drawTodo(todoArray);
+  setLocaleStorageTodo(todoArray);
+}
+
+function editTodo(id) {
+  console.log(id);
+  addBtn.innerText = "edit";
+  editObj = todoArray.find((item) => item.id == id);
+  todoInput.value = editObj.value;
+}
+
+function setLocaleStorageTodo(arr) {
+  localStorage.setItem("todo", JSON.stringify(arr));
+}
+function getLocaleStorageTodo() {
+  return JSON.parse(localStorage.getItem("todo")) ?? [];
+}

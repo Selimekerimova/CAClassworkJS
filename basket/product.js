@@ -321,7 +321,6 @@ let allProduct=getProductToLocalStorage()??[];
 function drawProducts(data) {
   productsList.innerHTML = "";
 
-  
   data.forEach((element) => {
     let divElem=document.createElement('div')
     divElem.className='col col-12 col-md-6 col-lg-4 display-flex justify-content-center mb-3'
@@ -336,7 +335,7 @@ function drawProducts(data) {
       </p>
       <div class='d-flex justify-content-between align-items-center'>
       <button class="btn btn-primary" onclick=addToBasket("${element._id}")>Add to basket</button>
-      <i class="fa-regular fa-heart text-danger"></i></div>
+      <i class="fa-regular fa-heart"></i></div>
     </div>
   </div>`
   productsList.append(divElem)
@@ -344,14 +343,16 @@ function drawProducts(data) {
 }
 drawProducts(products)
 function addToBasket(id){
-  let product=products.find(item=>item._id===id)
-  allProduct.push({count:1, product:product})
-  setProductToLocalStorage(allProduct)
+  let product=products.find(item=>item._id==id)
+  allProduct.push({count:1,product:product})
 
-  let basket=getProductToLocalStorage();
-  console.log(basket);
-  let index=basket?.findIndex((item)=>item.product._id===id)
-  console.log(index);
+let index=allProduct.findIndex(item=>item.product._id===id);
+if(index>-1){
+  allProduct[index].count=allProduct[index].count+1
+}else{
+  allProduct.push({count:1,product:product})
+}
+setProductToLocalStorage(allProduct)
 }
 
 function setProductToLocalStorage(arr){
