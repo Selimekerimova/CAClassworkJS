@@ -1,0 +1,451 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+button,
+i {
+  cursor: pointer;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media only screen and (max-width: 767px) {
+  .container {
+    padding: 0 5%;
+  }
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+
+header {
+  position: absolute;
+  z-index: 1;
+  width: 100%;
+  border-bottom: 1px solid white;
+}
+header .header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+header .header nav {
+  padding: 2rem 6rem;
+  border-left: 1px solid white;
+  border-right: 1px solid white;
+}
+header .header nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+header .header nav ul li a {
+  font-size: 20px;
+  transition: all 0.5s;
+}
+header .header nav ul li a:hover {
+  color: #ffc515;
+}
+header .header .contact-phon {
+  display: flex;
+  gap: 5px;
+}
+header .header .contact-phon p {
+  color: #ffc515;
+}
+header .header .contact-phon .fa-solid {
+  color: #fff;
+}
+header .header .contact-phon span {
+  color: #fff;
+}
+header .header .fa-bars {
+  display: none;
+  font-size: 2rem;
+  color: #fff;
+}
+@media only screen and (max-width: 767px) {
+  header {
+    padding: 2rem 0;
+  }
+  header .header nav {
+    display: none;
+  }
+  header .header .fa-bars {
+    display: block;
+  }
+  header .header .contact-phon {
+    display: none;
+  }
+}
+
+#hero-banner {
+  background-image: url("../img/slider-2.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+}
+#hero-banner .swiper {
+  height: 100vh;
+  width: 100%;
+}
+#hero-banner .swiper .swiper-wrapper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#hero-banner .swiper .swiper-wrapper .swiper-slide .hero-banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+#hero-banner .swiper .swiper-wrapper .swiper-slide .hero-banner div h1 {
+  color: #fff;
+  font-size: 4rem;
+}
+#hero-banner .swiper .swiper-wrapper .swiper-slide .hero-banner div h1 span {
+  color: #ffc515;
+}
+#hero-banner .swiper .swiper-wrapper .swiper-slide .hero-banner div p {
+  color: #fff;
+  font-size: 2rem;
+}
+
+#about {
+  height: 60vh;
+}
+#about .about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+}
+#about .about .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2rem 0;
+}
+#about .about .title div {
+  border: 3px solid #ffc515;
+  width: 200px;
+}
+#about .about .cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+#about .about .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+#about .about .cards .card p {
+  width: 90%;
+}
+@media only screen and (max-width: 1000px) {
+  #about .about .title div {
+    width: 100px;
+  }
+  #about .about .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  #about .about .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#banner {
+  background-image: url("../img/review-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#banner .banner {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#banner .banner .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2rem 0;
+}
+#banner .banner .title div {
+  border: 3px solid #ffc515;
+  width: 200px;
+}
+#banner .banner div h1 {
+  color: white;
+}
+#banner .banner div p {
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  width: 600px;
+}
+#banner .banner div p span {
+  color: #ffc515;
+}
+@media only screen and (max-width: 767px) {
+  #banner .banner .title div {
+    width: 100px;
+  }
+  #banner .banner div p {
+    width: unset;
+  }
+}
+
+#services .services {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+#services .services .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2rem 0;
+}
+#services .services .title div {
+  border: 3px solid #ffc515;
+  width: 200px;
+}
+#services .services .cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 30px;
+  padding: 3rem 0;
+}
+#services .services .cards .card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 20px;
+}
+#services .services .cards .card h2 {
+  font-size: 1.2rem;
+}
+#services .services .cards .card p {
+  opacity: 0.7;
+}
+@media only screen and (max-width: 1000px) {
+  #services .services .cards {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 767px) {
+  #services .services .title div {
+    width: 100px;
+  }
+  #services .services .cards {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+#menu {
+  background-image: url("../img/review-bg.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#menu .menu {
+  padding: 10rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+#menu .menu .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2rem 0;
+}
+#menu .menu .title div {
+  border: 3px solid #ffc515;
+  width: 200px;
+}
+#menu .menu .title h1 {
+  color: #fff;
+}
+#menu .menu .btns {
+  display: flex;
+  gap: 20px;
+}
+#menu .menu .btns button {
+  color: #fff;
+  transition: 0.5s;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+#menu .menu .btns button:hover {
+  color: #ffc515;
+}
+#menu .menu .content {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 4rem;
+}
+#menu .menu .content .menu-info-card {
+  display: flex;
+  flex-direction: column;
+}
+#menu .menu .content .menu-info-card h3 {
+  color: white;
+  font-size: 20px;
+}
+#menu .menu .content .menu-info-card div {
+  display: flex;
+  align-items: center;
+}
+#menu .menu .content .menu-info-card div p {
+  color: white;
+}
+#menu .menu .content .menu-info-card div p.desc {
+  opacity: 0.6;
+}
+#menu .menu .content .menu-info-card div span {
+  color: #fff;
+}
+#menu .menu .more {
+  padding: 20px 60px;
+  border: 1px solid #ffc515;
+  color: #111;
+  background-color: #ffc515;
+  font-weight: 500;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 767px) {
+  #menu .menu .title div {
+    width: 100px;
+  }
+  #menu .menu .content {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+footer {
+  padding: 4rem 0;
+}
+footer .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+footer .footer .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 2rem 0;
+}
+footer .footer .title div {
+  border: 3px solid #ffc515;
+  width: 200px;
+}
+footer .footer div input, footer .footer div textarea {
+  width: 400px;
+  padding: 20px;
+  border: none;
+  background-color: #eff4f6;
+  outline: none;
+}
+footer .footer div textarea {
+  width: 800px;
+}
+
+#form {
+  padding-top: 10rem;
+  background-color: #ffc515;
+}
+#form .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 70vh;
+}
+#form .container form {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 20px;
+}
+#form .container form div input {
+  width: 300px;
+  padding: 5px 30px;
+  outline: none;
+}
+#form .container form .add {
+  padding: 10px 20px;
+  color: #111;
+  font-weight: 800;
+  background-color: #fff;
+  border: 1px solid #111;
+}
+
+#table {
+  height: 80vh;
+}
+#table table {
+  margin: 100px 100px;
+}
+#table table tbody tr td .delete {
+  padding: 10px 20px;
+  color: #fff;
+  font-weight: 800;
+  background-color: red;
+  border: 1px solid red;
+}
+#table table,
+#table tr,
+#table td,
+#table th {
+  border: 1px solid #ffc515;
+  text-align: center;
+}
+#table tr,
+#table td,
+#table th {
+  padding: 5px 10px;
+}
+#table th {
+  color: #ffc515;
+}/*# sourceMappingURL=main.css.map */

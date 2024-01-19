@@ -1,0 +1,46 @@
+{
+  "product": [
+    {
+      "id": "1",
+      "imgUrl": "https://preview.colorlib.com/theme/selling/images/model_2_bg.jpg",
+      "price": 5,
+      "title": "Wild West Hoodie",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "2",
+      "imgUrl": "https://preview.colorlib.com/theme/selling/images/model_3_bg.jpg",
+      "price": 5,
+      "title": "Wild West Hoodie",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "3",
+      "imgUrl": "https://preview.colorlib.com/theme/selling/images/model_4_bg.jpg",
+      "price": 5,
+      "title": "Wild West Hoodie",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "4",
+      "imgUrl": "https://preview.colorlib.com/theme/selling/images/model_5_bg.jpg",
+      "price": 5,
+      "title": "Wild West Hoodie",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "id": "5",
+      "imgUrl": "https://preview.colorlib.com/theme/selling/images/product_1_bg.jpg",
+      "price": 5,
+      "title": "Wild West Hoodie",
+      "description": "Lorem ipsum dolor sit amet, consectetur adipisicing."
+    },
+    {
+      "image": "",
+      "title": "Nostrud quis libero ",
+      "price": "114",
+      "description": "Nisi consequatur Ac",
+      "id": "63"
+    }
+  ]
+}
